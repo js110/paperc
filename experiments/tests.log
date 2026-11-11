@@ -1,0 +1,144 @@
+=== RUN   TestAccountabilityBenchmarkExperiment
+    accountability_benchmark_test.go:29: set EVENT_ACCOUNTABILITY_BENCH_RUNS to an integer to run the measurement
+--- SKIP: TestAccountabilityBenchmarkExperiment (0.00s)
+=== RUN   TestAccountabilityGatewayEndToEnd
+=== RUN   TestAccountabilityGatewayEndToEnd/wrong_region
+=== RUN   TestAccountabilityGatewayEndToEnd/wrong_auditor
+=== RUN   TestAccountabilityGatewayEndToEnd/wrong_identity_ciphertext
+=== RUN   TestAccountabilityGatewayEndToEnd/modified_report_tag
+=== RUN   TestAccountabilityGatewayEndToEnd/malformed_proof
+--- PASS: TestAccountabilityGatewayEndToEnd (5.11s)
+    --- PASS: TestAccountabilityGatewayEndToEnd/wrong_region (0.00s)
+    --- PASS: TestAccountabilityGatewayEndToEnd/wrong_auditor (0.00s)
+    --- PASS: TestAccountabilityGatewayEndToEnd/wrong_identity_ciphertext (0.00s)
+    --- PASS: TestAccountabilityGatewayEndToEnd/modified_report_tag (0.00s)
+    --- PASS: TestAccountabilityGatewayEndToEnd/malformed_proof (0.00s)
+=== RUN   TestAccountabilityGroth16AndPinnedOpening
+=== RUN   TestAccountabilityGroth16AndPinnedOpening/zero_randomness
+=== RUN   TestAccountabilityGroth16AndPinnedOpening/order_randomness
+=== RUN   TestAccountabilityGroth16AndPinnedOpening/identity_neutral
+=== RUN   TestAccountabilityGroth16AndPinnedOpening/auditor_neutral
+=== RUN   TestAccountabilityGroth16AndPinnedOpening/cipher_R_changed
+=== RUN   TestAccountabilityGroth16AndPinnedOpening/link_signature_changed
+=== NAME  TestAccountabilityGroth16AndPinnedOpening
+    accountability_test.go:232: constraints=62627; valid Groth16 proof verified; ciphertext and pinned-key substitutions rejected
+--- PASS: TestAccountabilityGroth16AndPinnedOpening (4.01s)
+    --- PASS: TestAccountabilityGroth16AndPinnedOpening/zero_randomness (0.00s)
+    --- PASS: TestAccountabilityGroth16AndPinnedOpening/order_randomness (0.00s)
+    --- PASS: TestAccountabilityGroth16AndPinnedOpening/identity_neutral (0.00s)
+    --- PASS: TestAccountabilityGroth16AndPinnedOpening/auditor_neutral (0.00s)
+    --- PASS: TestAccountabilityGroth16AndPinnedOpening/cipher_R_changed (0.02s)
+    --- PASS: TestAccountabilityGroth16AndPinnedOpening/link_signature_changed (0.03s)
+=== RUN   TestAccountabilityRejectsInvalidPointsAndScalars
+--- PASS: TestAccountabilityRejectsInvalidPointsAndScalars (0.00s)
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/submit-first
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/update-first
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-1
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-2
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-3
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-4
+--- PASS: TestActiveGatewayConcurrentUpdateAndSubmission (9.87s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/submit-first (0.93s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/update-first (0.86s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-1 (0.86s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-2 (0.86s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-3 (1.00s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-4 (0.86s)
+=== RUN   TestActiveGatewayRevocationAndAtomicAcceptance
+--- PASS: TestActiveGatewayRevocationAndAtomicAcceptance (7.32s)
+=== RUN   TestBenchmarkExperiment
+    benchmark_test.go:29: set EVENT_BENCH_RUNS to an integer to run the measurement
+--- SKIP: TestBenchmarkExperiment (0.00s)
+=== RUN   TestReceiptBindingAblation
+MODEL same-task-and-challenge; attacker-has-valid-own-credential-and-knows-victim-receipt-context-event-before-consumption
+RESULT bound victim-valid=accept attacker-own=accept attacker-stolen=reject (R1CS)
+RESULT bearer victim-valid=accept attacker-stolen=accept (R1CS+Groth16)
+SCOPE synthetic comparison; no claim against the original system; no relay or physical-truth guarantee
+--- PASS: TestReceiptBindingAblation (1.86s)
+=== RUN   TestCircuitReportEventBindingAndNegativeControls
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/modified_coordinates
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/modified_time
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/modified_report_context
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/changed_task_nullifier
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/another_holder_secret
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/invalid_receipt
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/invalid_credential
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/invalid_issuer_authorization
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/policy_excludes_event
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/invalid_bounds
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/out-of-range_time
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/certified_neutral_issuer
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/authentic_outside_event
+=== RUN   TestCircuitReportEventBindingAndNegativeControls/inclusive_boundaries
+--- PASS: TestCircuitReportEventBindingAndNegativeControls (0.14s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/modified_coordinates (0.01s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/modified_time (0.01s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/modified_report_context (0.01s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/changed_task_nullifier (0.00s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/another_holder_secret (0.00s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/invalid_receipt (0.01s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/invalid_credential (0.01s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/invalid_issuer_authorization (0.01s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/policy_excludes_event (0.00s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/invalid_bounds (0.00s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/out-of-range_time (0.00s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/certified_neutral_issuer (0.00s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/authentic_outside_event (0.00s)
+    --- PASS: TestCircuitReportEventBindingAndNegativeControls/inclusive_boundaries (0.01s)
+=== RUN   TestNullifierScopeAndRealGroth16
+--- PASS: TestNullifierScopeAndRealGroth16 (1.77s)
+=== RUN   TestInvalidCertifiedPointsAndSignatureR
+=== RUN   TestInvalidCertifiedPointsAndSignatureR/order_two
+=== RUN   TestInvalidCertifiedPointsAndSignatureR/off_curve
+=== RUN   TestInvalidCertifiedPointsAndSignatureR/off_curve_signature_R
+--- PASS: TestInvalidCertifiedPointsAndSignatureR (0.06s)
+    --- PASS: TestInvalidCertifiedPointsAndSignatureR/order_two (0.00s)
+    --- PASS: TestInvalidCertifiedPointsAndSignatureR/off_curve (0.00s)
+    --- PASS: TestInvalidCertifiedPointsAndSignatureR/off_curve_signature_R (0.00s)
+=== RUN   TestEndToEndExperiment
+    end_to_end_benchmark_test.go:33: set EVENT_END_TO_END_RUNS to run the experiment
+--- SKIP: TestEndToEndExperiment (0.00s)
+=== RUN   TestGatewayGroth16BindingReplayAndAtomicDeduplication
+--- PASS: TestGatewayGroth16BindingReplayAndAtomicDeduplication (2.06s)
+=== RUN   TestGatewayRejectsMalformedAuthorities
+--- PASS: TestGatewayRejectsMalformedAuthorities (2.02s)
+=== RUN   TestMLKEMReportEnvelope
+--- PASS: TestMLKEMReportEnvelope (0.00s)
+=== RUN   TestRegionBenchmarkExperiment
+    region_benchmark_test.go:29: set EVENT_REGION_BENCH_RUNS to an integer to run the measurement
+--- SKIP: TestRegionBenchmarkExperiment (0.00s)
+=== RUN   TestRegionGatewayActualProofsAndAtomicAcceptance
+--- PASS: TestRegionGatewayActualProofsAndAtomicAcceptance (3.42s)
+=== RUN   TestRegionGroth16AndAdversarialInputs
+=== RUN   TestRegionGroth16AndAdversarialInputs/public_root_substitution
+=== RUN   TestRegionGroth16AndAdversarialInputs/forged_sibling
+=== RUN   TestRegionGroth16AndAdversarialInputs/forged_direction
+=== RUN   TestRegionGroth16AndAdversarialInputs/nonboolean_direction
+=== RUN   TestRegionGroth16AndAdversarialInputs/forged_root
+=== RUN   TestRegionGroth16AndAdversarialInputs/modified_signed_location
+=== RUN   TestRegionGroth16AndAdversarialInputs/signed_unauthorized_leaf
+=== NAME  TestRegionGroth16AndAdversarialInputs
+    region_test.go:140: region constraints=35798; valid proofs=2; negative witnesses rejected=6; wrong root verification rejected=1
+--- PASS: TestRegionGroth16AndAdversarialInputs (2.97s)
+    --- PASS: TestRegionGroth16AndAdversarialInputs/public_root_substitution (0.01s)
+    --- PASS: TestRegionGroth16AndAdversarialInputs/forged_sibling (0.01s)
+    --- PASS: TestRegionGroth16AndAdversarialInputs/forged_direction (0.01s)
+    --- PASS: TestRegionGroth16AndAdversarialInputs/nonboolean_direction (0.00s)
+    --- PASS: TestRegionGroth16AndAdversarialInputs/forged_root (0.01s)
+    --- PASS: TestRegionGroth16AndAdversarialInputs/modified_signed_location (0.01s)
+    --- PASS: TestRegionGroth16AndAdversarialInputs/signed_unauthorized_leaf (0.06s)
+=== RUN   TestRegionPolicyConfiguration
+--- PASS: TestRegionPolicyConfiguration (0.01s)
+=== RUN   TestRevocationBenchmarkExperiment
+    revocation_benchmark_test.go:30: set EVENT_REVOCATION_BENCH_RUNS to an integer to run the measurement
+--- SKIP: TestRevocationBenchmarkExperiment (0.00s)
+=== RUN   TestActiveCredentialGroth16Revocation
+    revocation_test.go:172: active constraints=68592; real proofs: old valid, new-root rejection, remaining participant valid
+--- PASS: TestActiveCredentialGroth16Revocation (5.33s)
+=== RUN   TestActivePolicyConfigurationAndSnapshots
+--- PASS: TestActivePolicyConfigurationAndSnapshots (0.01s)
+=== RUN   TestEncryptedReportEnvelope
+--- PASS: TestEncryptedReportEnvelope (0.00s)
+PASS
+ok  	eventreport	46.278s

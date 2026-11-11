@@ -1,0 +1,8 @@
+=== RUN   TestReceiptBindingAblation
+MODEL same-task-and-challenge; attacker-has-valid-own-credential-and-knows-victim-receipt-context-event-before-consumption
+RESULT bound victim-valid=accept attacker-own=accept attacker-stolen=reject (R1CS)
+RESULT bearer victim-valid=accept attacker-stolen=accept (R1CS+Groth16)
+SCOPE synthetic comparison; no claim against the original system; no relay or physical-truth guarantee
+--- PASS: TestReceiptBindingAblation (3.28s)
+PASS
+ok  	eventreport	3.700s

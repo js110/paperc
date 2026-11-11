@@ -1,0 +1,16 @@
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/submit-first
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/update-first
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-1
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-2
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-3
+=== RUN   TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-4
+--- PASS: TestActiveGatewayConcurrentUpdateAndSubmission (10.88s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/submit-first (1.07s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/update-first (1.22s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-1 (1.00s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-2 (1.02s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-3 (0.93s)
+    --- PASS: TestActiveGatewayConcurrentUpdateAndSubmission/simultaneous-4 (0.86s)
+PASS
+ok  	eventreport	11.341s

@@ -1,0 +1,6 @@
+=== RUN   TestHiddenContextCandidate
+RESULT candidate_valid=Groth16_verified substituted_context=R1CS_rejected substituted_holder=R1CS_rejected constraints=29503
+SCOPE research candidate base circuit; issuer signature input is (constant,holder,event); role separation and privacy assumptions unproven; no network or extended circuit benchmark
+--- PASS: TestHiddenContextCandidate (1.77s)
+PASS
+ok  	eventreport	2.310s

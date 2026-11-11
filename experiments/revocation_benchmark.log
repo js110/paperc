@@ -1,0 +1,55 @@
+=== RUN   TestRevocationBenchmarkExperiment
+experiment=event-report-revocation-groth16-v1
+started_utc=2026-11-04T08:18:31.004121Z
+go=go1.26.8 os=darwin arch=arm64 logical_cpus=8 gomaxprocs=8
+cpu="Apple M1" memory_bytes=17179869184 os_product="macOS" os_version="27.2" os_build="26B123"
+modules="github.com/consensys/gnark v0.16.4\ngithub.com/consensys/gnark-crypto v0.21.1-0.20260913224755-1409fe592052"
+source_sha256 file=circuit.go digest=64c3abdf1018a5ccb4c1ee825a0682408601be9ed2faba6eb9f98f6ff45a8f98
+source_sha256 file=native.go digest=f01fe4da816d094c44937d82fbd6cdc9251322bc97ac2eb2f35aa59ddf4abcd4
+source_sha256 file=region.go digest=dadc4cbdd04d537c825f10c713a70e8b7cd1aaa7a181aaaef330d39b6993fbd1
+source_sha256 file=accountability.go digest=81133194598b512a363cb9d51937d0bd60033ed2b2c29b941978c0d07f33684a
+source_sha256 file=revocation.go digest=71ffe37187da580a5268b8f960a6ea94f6d3a3224eccf065576b1c37e2bbb30d
+source_sha256 file=go.mod digest=39160b37ac4b02a6ae2fec2a38f70efabcd116a14398a937fc35d67b7d0c4882
+source_sha256 file=go.sum digest=aba34ea39ebaa04131ea6f715080bfccd98045a77c28a1b64c3734b618366bb5
+source_sha256 file=benchmark_test.go digest=fb828857f670a87ac74b31440843b8c0a0fdfc071da3340d00914f48b6f06161
+source_sha256 file=region_benchmark_test.go digest=04bebfef88b0826b7b26101f9cd5bcc7cbd18a270ecec52f308cbbd8baed6b70
+source_sha256 file=accountability_benchmark_test.go digest=69169ec7dcf0dd98a924d0a2b28fe13d414ac0522191244b03f9a393f65e583d
+source_sha256 file=revocation_benchmark_test.go digest=c919ecb8cdcb3615c420088dc7579989d4638733494370100aa7bba8df552797
+backend=Groth16 curve=BN254 r1cs=true region_depth=8 region_cells=256 active_depth=8 active_credentials=256 runs=30 warmup=1 setup_count=1 compile_count=1
+compile_ns=76219166 setup_ns=4424302375 constraints=68592 public_variables_including_one=20 secret_variables=53
+sample,prove_ns,verify_ns,proof_bytes,public_witness_bytes
+warmup,414658000,1049292,164,620
+1,426313708,1006042,164,620
+2,425752959,1096625,164,620
+3,533512167,1021959,164,620
+4,423809208,1030166,164,620
+5,410801125,990792,164,620
+6,411604958,1016833,164,620
+7,425703375,1015958,164,620
+8,439562542,964583,164,620
+9,408021416,965542,164,620
+10,399831416,1024209,164,620
+11,405008292,1047125,164,620
+12,409495000,990792,164,620
+13,418883125,976167,164,620
+14,401843542,1003958,164,620
+15,416961125,981708,164,620
+16,420642375,1014417,164,620
+17,448458417,1000625,164,620
+18,415533083,992292,164,620
+19,418431667,1092541,164,620
+20,419799500,1107292,164,620
+21,408771916,1054334,164,620
+22,435552875,998709,164,620
+23,416708792,1007167,164,620
+24,424845334,1051541,164,620
+25,409415875,994166,164,620
+26,422683583,1007125,164,620
+27,429183292,1065291,164,620
+28,428038917,987250,164,620
+29,407536583,990000,164,620
+30,411296417,977833,164,620
+completed_utc=2026-11-04T08:18:48.723268Z
+--- PASS: TestRevocationBenchmarkExperiment (17.72s)
+PASS
+ok  	eventreport	17.905s

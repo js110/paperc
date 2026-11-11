@@ -1,0 +1,4 @@
+=== RUN   TestActiveGatewayRevocationAndAtomicAcceptance
+--- PASS: TestActiveGatewayRevocationAndAtomicAcceptance (74.20s)
+PASS
+ok  	eventreport	75.938s

@@ -1,0 +1,24 @@
+go: downloading go1.26.8 (darwin/arm64)
+go: downloading github.com/consensys/gnark-crypto v0.21.1-0.20260913224755-1409fe592052
+go: downloading github.com/consensys/gnark v0.16.4
+go: downloading github.com/rs/zerolog v1.35.1
+go: downloading golang.org/x/crypto v0.54.0
+go: downloading github.com/bits-and-blooms/bitset v1.24.6
+go: downloading github.com/blang/semver/v4 v4.0.0
+go: downloading github.com/fxamacker/cbor/v2 v2.9.2
+go: downloading golang.org/x/sync v0.22.0
+go: downloading github.com/google/pprof v0.0.0-20260802141513-ef3492d7dac3
+go: downloading github.com/ronanh/intcomp v1.1.1
+go: downloading golang.org/x/sys v0.47.0
+go: downloading github.com/mattn/go-colorable v0.1.15
+go: downloading github.com/x448/float16 v0.8.4
+go: downloading github.com/mattn/go-isatty v0.0.24
+=== RUN   TestContextBindingAblation
+RESULT case=original bound=accept (R1CS) no_context=accept (R1CS+Groth16)
+RESULT case=report_substitution bound=reject (R1CS) no_context=accept (R1CS+Groth16)
+RESULT case=challenge_substitution bound=reject (R1CS) no_context=accept (R1CS+Groth16)
+RESULT case=task_substitution bound=reject (R1CS) no_context=accept (R1CS+Groth16)
+MODEL same-participant receipt reuse; ablation replaces context in holder and signed receipt with zero; attacker has receipt, not issuer key
+--- PASS: TestContextBindingAblation (2.26s)
+PASS
+ok  	eventreport	2.736s
